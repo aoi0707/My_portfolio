@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600");
+
+.gnavi {
+  display: flex;
+  flex-wrap: wrap; /*スマホ表示折り返し用なのでPCのみなら不要*/
+  margin: 0 0 50px 0;
+  list-style: none;
+  float: right;
+}
+
+.gnavi li a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.gnavi li {
+  margin-bottom: 20px;
+}
+
+.gnavi li a {
+  position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover {
+  color: #ffffffb6;
+}
+
+.gnavi li a::after {
+  content: "";
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*線になる丸の形状*/
+  width: 100%;
+  height: 5px;
+  border-radius: 50%;
+  background: #02d5f1;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0.04, 1); /*X方向0.04、Y方向1*/
+  transform-origin: center bottom; /*中央下部基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+  height: 2px;
+  border-radius: 0;
+  transform: scale(0.8, 1);
+}
+
+header {
+  height: 80px;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  outline: 0;
+}
+
+a {
+  color: currentColor;
+  transition: 0.2s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}

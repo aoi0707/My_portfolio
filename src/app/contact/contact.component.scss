@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,600");
+
+.page {
+  width: 100%;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255);
+  overflow: clip;
+}
+
+main {
+  flex-direction: column;
+  width: 100%;
+}
+
+main > div {
+  margin-left: 50px;
+  max-width: 600px;
+}
+
+main h2 span {
+  color: #8fc5c9;
+}
+
+main p {
+  line-height: 1.5;
+  font-weight: 200;
+  margin: 20px 0;
+}
+
+.resizeimage img {
+  width: 100%;
+  position: fixed;
+  z-index: -1; /*最背面に設定*/
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.text h3 {
+  margin: 30px 0px;
+  color: #d4d4d4;
+}
+
+.text li {
+ line-height: 1.5;
+  font-weight: 200;
+  margin: 10px 0;
+  font-size: small;
+}
