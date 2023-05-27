@@ -16,7 +16,7 @@ main {
 
 main > div {
   margin-left: 50px;
-  max-width: 600px;
+  max-width: 690px;
 }
 
 main h2 span {
@@ -64,11 +64,12 @@ main p {
   font-size: small;
 }
 
-.text{
-  display: flex;
+.text {
+  // display: flex;
+  max-width: 500px;
 }
 
-.text li{
+.text li {
   line-height: 1.5;
   font-weight: 200;
   margin: 10px 0;
