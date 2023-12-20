@@ -46,8 +46,21 @@ main p {
 }
 
 .text li {
- line-height: 1.5;
+  line-height: 1.5;
   font-weight: 200;
   margin: 10px 0;
   font-size: small;
+}
+
+.typing5 {
+  width: 20ch; /*文字の長さ*/
+  overflow: hidden; /*必須*/
+  white-space: nowrap; /*必須*/
+  animation: typing 3s steps(20), step-end infinite alternate; /*アニメーション関連*/
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }

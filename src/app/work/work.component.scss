@@ -91,3 +91,16 @@ main p {
   margin-top: 38px;
   margin-bottom: 38px;
 }
+
+.typing4 {
+  width: 20ch; /*文字の長さ*/
+  overflow: hidden; /*必須*/
+  white-space: nowrap; /*必須*/
+  animation: typing 3s steps(20), step-end infinite alternate; /*アニメーション関連*/
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
